@@ -1,7 +1,9 @@
 package test.spring.mvc;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MainController {
@@ -17,7 +19,9 @@ public class MainController {
 	}
 	
 	@RequestMapping("/getResult")
-	public String showResultPage() {
+	public String showResultPage(@RequestParam("getUserName") String uName, @RequestParam("getPassword") String password, Model model) {
+		model.addAttribute("userName", uName);
+		model.addAttribute("password", password);
 		return "result";
 	}
 	

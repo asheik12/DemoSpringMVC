@@ -8,8 +8,11 @@
 </head>
 <body>
 
-<h3>Your Username : ${param.getUserName}</h3>
-<h3>Your Password : ${param.getPassword}</h3>
+<%-- <h3>Your Username : ${param.getUserName}</h3>
+<h3>Your Password : ${param.getPassword}</h3> --%>
+
+<h3>Your Username : ${userName}</h3>
+<h3>Your Password : ${password}</h3>
 
 </body>
 </html>
