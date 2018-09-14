@@ -4,15 +4,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>${param.getUserName} Logged In</title>
+<title>${modelAtt.userName} Logged In</title>
 </head>
 <body>
 
 <%-- <h3>Your Username : ${param.getUserName}</h3>
 <h3>Your Password : ${param.getPassword}</h3> --%>
 
-<h3>Your Username : ${userName}</h3>
-<h3>Your Password : ${password}</h3>
+<h3>Your Username : ${modelAtt.userName}</h3>
+<h3>Your Password : ${modelAtt.password}</h3>
 
 </body>
 </html>
