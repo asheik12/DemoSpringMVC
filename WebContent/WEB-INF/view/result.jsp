@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Spring MVC</title>
+<title>${param.getUserName} Logged In</title>
 </head>
 <body>
-<h1>Hello World Example For Spring MVC</h1>
-<a href="login">Login page </a>
+
+<h3>Your Username : ${param.getUserName}</h3>
+<h3>Your Password : ${param.getPassword}</h3>
+
 </body>
 </html>

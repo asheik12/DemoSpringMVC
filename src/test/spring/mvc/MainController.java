@@ -11,4 +11,14 @@ public class MainController {
 		return "Hello";
 	}
 	
+	@RequestMapping("/login")
+	public String showLoginPage() {
+		return "Login_Page";
+	}
+	
+	@RequestMapping("/getResult")
+	public String showResultPage() {
+		return "result";
+	}
+	
 }
